@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Weather App using weather API</name>
+    <name>Weather App</name>
 
     <description>
-        An example of using a simple weather API
+        An example of using a simple weather API from metaweather.com
     </description>
 
     <author href="http://www.derekknaggs.com" email="knad1_14@uni.worc.ac.uk">
