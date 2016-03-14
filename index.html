@@ -31,9 +31,11 @@
 
 <!--Ractive template - how to display data-->
     <script id='myTemplate' type='text/ractive'>
-	
+
+    		{{#parent}}
+			<h3>{{title}}</h3>
 			{{#weather}}
-			<li>{{weather_state_name}}</li>
+			<li>{{applicable_date}} - {{weather_state_name}}</li>
 			<li><img src="https://www.metaweather.com/static/img/weather/{{weather_state_abbr}}.svg" width="42" height="42"></li>
 			{{/weather}}
 

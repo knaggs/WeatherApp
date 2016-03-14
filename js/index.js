@@ -15,7 +15,7 @@ $(document).on('pagecreate', '#feedPage', function(event) {
 	var ractive = new Ractive({
     	el: 'container', //<!-- where -->
     	template: '#myTemplate', //<!-- how -->
-    	data: { weather : weather.consolidated_weather } //<!-- what - specify the list of news articles 'items' using dot notation-->
+    	data: { weather : weather.consolidated_weather parent : weather.parent} //<!-- what - specify the list of news articles 'items' using dot notation-->
 	});
 	}
 	xmlhttp.send();
