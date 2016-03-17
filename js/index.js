@@ -1,10 +1,17 @@
 var feedURL = "https://www.metaweather.com/api/location/44418/";
 
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+
 document.addEventListener("offline", onOffline, false);
 
 function onOffline() {
    new Android_Toast({content: 'Please connect to the internet!', duration: 6000, position: 'top'}); // Handle the offline event
 }
+    
+});
+
 
 $(document).on('pagecreate', '#feedPage', function(event) {
 	
