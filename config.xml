@@ -16,6 +16,8 @@
     <author href="http://www.derekknaggs.com" email="knad1_14@uni.worc.ac.uk">
         Derek Knaggs
     </author>
+
+    <plugin name="cordova-plugin-network-information" spec="1.0.1" source="pgb" />
 	
 	<!-- give access to all domains in the outside world -->
     <plugin name="cordova-plugin-whitelist" spec="1" />
