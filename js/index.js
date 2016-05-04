@@ -6,12 +6,12 @@ function onLoad() {
 
 function onDeviceReady(){
 	console.log('OndeviceReady running');
-	document.addEventListener("offline", onOffline, false);
+	document.addEventListener("onoffline", onOffline, false);
 }
 
 function onOffline() {
 	console.log('onOffline running');
-   new Android_Toast({content: 'Please connect to the internet!', duration: 6000, position: 'top'}); // Handle the offline event
+   	new Android_Toast({content: 'Please connect to the internet!', duration: 6000, position: 'top'}); // Handle the offline event
 }
     
 
