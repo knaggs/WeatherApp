@@ -32,14 +32,10 @@ function checkConnection() {
 }
 
 
-
-
-
-
 $(document).on('pagecreate', '#feedPage', function(event) {
 	
 	
-	checkConnection();
+	// checkConnection();
 	// <!-- Use an HTML GET request to obtain data from a Yahoo Pipe
 	// <!-- The Yahoo pipe currently parses the BBC News RSS feed  -->
 	var xmlhttp=new XMLHttpRequest();
