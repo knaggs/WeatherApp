@@ -1,19 +1,5 @@
 var feedURL = "https://www.metaweather.com/api/location/44418/";
 
-if (doesConnectionExist() == true) {
-			new Android_Toast({content: 'Working..', duration: 2000, position: 'top'});
-		} else {
-			new Android_Toast({content: 'Please connect to the internet!', duration: 6000, position: 'top'});
-		}
-
-function onLoad() {
-    document.addEventListener("deviceready", onDeviceReady, false);
-}
-
-function onDeviceReady(){
-	console.log('OndeviceReady running');
-}
-
 function doesConnectionExist() {
     var xhr = new XMLHttpRequest();
     var file = "http://www.derekknaggs.com/star.png";
@@ -32,6 +18,20 @@ function doesConnectionExist() {
     } catch (e) {
         return false;
     }
+}
+
+if (doesConnectionExist() == true) {
+			new Android_Toast({content: 'Working..', duration: 2000, position: 'top'});
+		} else {
+			new Android_Toast({content: 'Please connect to the internet!', duration: 6000, position: 'top'});
+		}
+
+function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+function onDeviceReady(){
+	console.log('OndeviceReady running');
 }
 
 $(document).on('pagecreate', '#feedPage', function(event) {
