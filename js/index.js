@@ -21,9 +21,9 @@ function doesConnectionExist() {
 }
 
 if (doesConnectionExist() == true) {
-			new Android_Toast({content: 'Working..', duration: 2000, position: 'top'});
+			alert('Working..');
 		} else {
-			new Android_Toast({content: 'Please connect to the internet!', duration: 6000, position: 'top'});
+			alert('Please connect to the internet!');
 		}
 
 function onLoad() {
