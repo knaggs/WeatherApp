@@ -13,7 +13,26 @@ function onOffline() {
 	console.log('onOffline running');
    	new Android_Toast({content: 'Please connect to the internet!', duration: 6000, position: 'top'}); // Handle the offline event
 }
-    
+
+function doesConnectionExist() {
+    var xhr = new XMLHttpRequest();
+    var file = "http://www.derekknaggs.com/star.png";
+    var randomNum = Math.round(Math.random() * 10000);
+     
+    xhr.open('HEAD', file + "?rand=" + randomNum, false);
+     
+    try {
+        xhr.send();
+         
+        if (xhr.status >= 200 && xhr.status < 304) {
+            return true;
+        } else {
+            return false;
+        }
+    } catch (e) {
+        return false;
+    }
+}
 
 function checkConnection() {
     var networkState = navigator.connection.type;
